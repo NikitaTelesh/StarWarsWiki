@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SWAPI</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" href="css/null_style.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+<div class="_burger-maska"></div>
+
+<div class="swapi-background ibg">
+	<img src="img/Header/header_backgound.jpg" alt="Star Wars picture" class="img-ibg">
+</div>
+
+<nav class="nav">
+	<div class="nav__burger">
+		<div class="burger">
+			<div class="burger__line burger__line--first"></div>
+			<div class="burger__line burger__line--second"></div>
+			<div class="burger__line burger__line--third"></div>
+			<div class="burger__line burger__line--fourth"></div>
+		</div>
+		<p class="nav__burger-title">
+			Menu
+		</p>
+	</div>
+
+	<ul class="nav__list">
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/people/?page=1" class="nav__category">People</a>
+		</li>
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/films/" class="nav__category">Films</a>
+		</li>
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/starships/?page=1" class="nav__category">Starships</a>
+		</li>
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/vehicles/?page=1" class="nav__category">Venicles</a>
+		</li>
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/species/?page=1" class="nav__category">Species</a>
+		</li>
+		<li class="nav__item">
+			<a href="https://swapi.dev/api/planets/?page=1" class="nav__category">Planets</a>
+		</li>
+	</ul>
+</nav>
+
+<header class="header">
+	<h1 class="header__title">Welcome to StarWars WIKI!</h1>
+</header>
+
+<main class="main">
+	<div class="container">
+		<div class="main__container">
+			<h2 class="main__title">People</h2>
+
+			<form class="main__search search">
+				<input type="search" placeholder="Searching..." class="search__input" required="true" />
+				<button type="submit" class="search__btn">search</button>
+			</form>
+
+			<div data-id="_peopleCnt" class="main__content"></div>
+
+			<div class="main__pagination pagination"></div>
+
+			<div class="main__preloader hidden">
+				<div class="preloader"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
